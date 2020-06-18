@@ -1,0 +1,35 @@
+echo '<pre>'; print_r($result); echo '</pre>';exit;
+
+
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+C:\Windows\System32\drivers\etc\hosts
+
+
+php artisan key:generate
+php artisan config:clear
+php artisan clear-compiled
+php artisan config:clear
+
+
+php artisan migrate
+php artisan db:seed
+
+
+
+composer require laravel/ui
+
+php artisan ui bootstrap --auth
+
+
+npm install less@2.7.3
+rm -r ./node_modules
+npm install gulp-less@latest -D
+npm install
+
+npm run dev
+
+npm run fe-build
+
+1) node -v -> must be greater than 8.9
+2) yarn install --network-timeout 1000000
+3) npm run fe-build
