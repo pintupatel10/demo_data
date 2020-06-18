@@ -33,3 +33,14 @@ npm run fe-build
 1) node -v -> must be greater than 8.9
 2) yarn install --network-timeout 1000000
 3) npm run fe-build
+
+
+
+git stash
+git status
+git pull
+git stash pop
+
+
+git branch release/20190828_departure_location
+git checkout release/20190828_departure_location
