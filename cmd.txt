@@ -44,3 +44,30 @@ git stash pop
 
 git branch release/20190828_departure_location
 git checkout release/20190828_departure_location
+
+
+<VirtualHost *:80>
+    ServerName mhw_service.local
+    DocumentRoot "C:/xampp/htdocs/mhw_service/public"
+    SetEnv APPLICATION_ENV "development"
+    <Directory "C:/xampp/htdocs/mhw_service/public">
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName techflitter-task.local
+    DocumentRoot "C:/xampp/htdocs/techflitter-task/public"
+    SetEnv APPLICATION_ENV "development"
+    <Directory "C:/xampp/htdocs/techflitter-task/public">
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+127.0.0.1       mhw.local
