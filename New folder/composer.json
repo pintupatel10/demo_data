@@ -1,0 +1,58 @@
+
+{
+    "autoload": {
+        "psr-4": {
+            "RezPay\\Common\\": "app/Libraries/Payment/Common/",
+            "RezPay\\Braintree\\": "app/Libraries/Payment/Braintree/"
+        },
+        "classmap": ["app/", "Modules/"],
+        "files": ["app/Libraries/Payment/RezPay.php", "app/comman_helper.php"]
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-rezb2b"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-common"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-rezdy"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-tourcms"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-fareharbor"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-goeugo"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-ttd"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-tourbms"
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Tours4Fun/travelrez-viator"
+    }],
+    "require": {
+        "google/apiclient": "^2.0",
+        "guzzlehttp/guzzle": "6.4.1",
+        "krossroad/laravel-union-paginator": "5.4.4",
+        "travelrez/rezb2b": "dev-master",
+        "travelrez/tourcms": "dev-master",
+        "travelrez/rezdy": "dev-master",
+        "travelrez/fareharbor": "dev-master",
+        "travelrez/goeugo": "dev-master",
+        "travelrez/ttd": "dev-master",
+        "travelrez/tourbms": "dev-master",
+        "travelrez/viator": "dev-master",
+        "academe/omnipay-authorizenetapi": " ~3.0",
+        "overtrue/pinyin": "3.0",
+        "matriphe/iso-639": "^1.2",
+        "summer-wqm/sift-php": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
